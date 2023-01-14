@@ -1,11 +1,13 @@
 public class GFG{
     public static long findNumber(long N)
     {
-        long i=0;
-        long a=1;
+        long i=1;
+        long a=0;
         while(i!=N){
-            if(containsOnlyOdd(a)){
+            if(containsOnlyOdd(i)){
                 a++;
+                i++;
+            }else{
                 i++;
             }
         }
@@ -22,6 +24,6 @@ public class GFG{
         return true;
     }
     public static void main(String args[]){
-        findNumber(3);
+        System.out.println(findNumber(113));
     }
 }

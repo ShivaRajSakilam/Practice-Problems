@@ -1,8 +1,8 @@
-public class forLoop {
+public class InfiniteforLoop {
     public static void main(String[] args){
-        //for(; ;){
+        for(; ;){
             System.out.println("shivaraj");
-        //}
+        }
     }
     
 }
