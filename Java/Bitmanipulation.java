@@ -58,7 +58,7 @@ public class Bitmanipulation {
         System.out.println(n);
     }
     public static void evenorodd(int n) {
-         int bitMask=1;
+        //  int bitMask=1;
          if((n & 1) ==0){
             System.out.println("even number");
          }

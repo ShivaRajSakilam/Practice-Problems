@@ -1,5 +1,5 @@
+package OOPS;
 import java.util.Scanner;
-
 class Pen{
     // data members
     String color;

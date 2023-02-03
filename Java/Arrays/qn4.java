@@ -1,3 +1,5 @@
+package Arrays;
+
 public class qn4 {
     public static int MinPostive(int[] a) {
         // int j = 0;

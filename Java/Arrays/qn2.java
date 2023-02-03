@@ -1,4 +1,6 @@
 // import java.util.*;
+package Arrays;
+
 public class qn2 {
     public static void func(int[] a, int[] b){
         

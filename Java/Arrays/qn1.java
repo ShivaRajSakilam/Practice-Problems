@@ -1,5 +1,7 @@
+package Arrays;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 // import javax.sql.rowset.spi.SyncResolver;
 

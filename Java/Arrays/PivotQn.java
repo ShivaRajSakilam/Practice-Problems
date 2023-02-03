@@ -1,3 +1,5 @@
+package Arrays;
+
 public class PivotQn{
     public static int pivotIndex(int[] nums) {
             int sl=0,sr=0,i;
