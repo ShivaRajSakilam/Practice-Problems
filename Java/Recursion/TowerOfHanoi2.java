@@ -1,3 +1,5 @@
+package Recursion;
+
 public class TowerOfHanoi2 {
     public static void towerOfHanoi(int n, String A, String B, String C) {
         if(n == 1) {
