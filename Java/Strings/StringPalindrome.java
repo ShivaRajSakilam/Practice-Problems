@@ -1,3 +1,4 @@
+package Strings;
 class StringPalindrome{
     public static boolean palindrome(String s){
         String s1="";

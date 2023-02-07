@@ -1,3 +1,4 @@
+package Strings;
 public class Stringcompress {
     public static String compress(String s){
         Integer count=1;

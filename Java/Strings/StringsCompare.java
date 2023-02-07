@@ -1,5 +1,5 @@
 //import jdk.internal.jshell.tool.resources.l10n;
-
+package Strings;
 
 public class StringsCompare {
 public static void main(String args[]) {
