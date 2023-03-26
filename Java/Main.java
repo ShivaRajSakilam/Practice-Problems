@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 // My First Program
 class Main {
 
