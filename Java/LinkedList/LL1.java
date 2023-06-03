@@ -37,14 +37,58 @@ public class LL1 {
         System.out.print("NULL");
     }
 
+    public boolean isPalin(){
+        //finding mid
+        Node slow=this.head;
+        Node fast=this.head;
+        while(fast.next!=null && fast.next.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        // System.out.println(slow.data+" "+fast.data);
+        // if(this.size%2==0)
+        
+        //reversing 2nd half
+        Node x=slow;
+        Node prev=null;
+        slow=slow.next;
+
+        Node curr=slow;
+        Node next=null;
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        x.next=prev;
+        fast=this.head;
+        // printList();
+        x=x.next;
+        while(x!=null){
+            // System.out.println(slow.data+" "+fast.data);
+            if(x.data!=fast.data)
+            return false;
+            x=x.next;
+            fast=fast.next;
+        }
+        return true;
+    }
+
 
     public static void main(String args[]) {
         LL1 list = new LL1();
-        list.addFirst(4);
-        list.addFirst(3);
-        list.addFirst(2);
+        list.addFirst(1);
+        list.addLast(3);
+        list.addLast(3);
         list.addLast(1);
-        list.addLast(5);
+        // list.addLast(1);
+        list.printList();
+        System.out.println();
+        if(list.isPalin())
+        System.out.println("the given LL is palindrome");
+        else
+        System.out.println("the given LL is not a palindrome");
         list.printList();
     }
 }
